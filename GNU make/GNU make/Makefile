@@ -1,5 +1,7 @@
-capitalism: board.o player.o deck.o tiles.o
-	gcc -o capitalism board.o player.o deck.o tiles.o
+OBJ = board.o player.o deck.o tiles.o
+
+capitalism: $(OBJ)
+	gcc -o capitalism $(OBJ)
 
 board.o: board.c
 	gcc -c board.c
