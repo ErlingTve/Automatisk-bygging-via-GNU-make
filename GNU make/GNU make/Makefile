@@ -15,7 +15,7 @@ clean: $(OBJECTS)
 	rm $(OBJECTS)
 
 communism: $(OBJECTS)
-	CC -o $@ $(OBJECTS) CFLAGS
+	CC -o $@ $(OBJECTS) $(CFLAGS)
 
 .PHONY: nuclear_war
 nuclear_war:
