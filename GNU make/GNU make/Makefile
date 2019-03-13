@@ -3,14 +3,10 @@ OBJ = board.o player.o deck.o tiles.o
 capitalism: $(OBJ)
 	gcc -o capitalism $(OBJ)
 
-board.o: board.c
-	gcc -c board.c
+board.o: 
 
-player.o: player.c
-	gcc -c player.c
+player.o: 
 
-deck.o: deck.c
-	gcc -c deck.c
+deck.o: 
 
-Tiles.o: tiles.c
-	gcc -c tiles.c
+tiles.o:
