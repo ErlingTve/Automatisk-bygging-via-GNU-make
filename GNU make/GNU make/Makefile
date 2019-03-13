@@ -1,12 +1,11 @@
-OBJ = board.o player.o deck.o tiles.o
+.DEFAULT_GOAL := communism
 
-capitalism: $(OBJ)
-	gcc -o capitalism $(OBJ)
+CC := gcc
+.PHONY: clean
+clean:
 
-board.o: 
+communism:
 
-player.o: 
-
-deck.o: 
-
-tiles.o:
+.PHONY: nuclear_war
+nuclear_war:
+ 
