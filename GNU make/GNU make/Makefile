@@ -14,7 +14,8 @@ OBJECTS = class_struggle.o marxism.o revolutionary_incentive.o political_instabi
 clean: $(OBJECTS)
 	rm $(OBJECTS)
 
-communism:
+communism: $(OBJECTS)
+	CC communism $(OBJECTS) CFLAGS
 
 .PHONY: nuclear_war
 nuclear_war:
