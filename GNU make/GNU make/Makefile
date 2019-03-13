@@ -11,7 +11,8 @@ OBJECTS = class_struggle.o marxism.o revolutionary_incentive.o political_instabi
 	targeted_assassinations.o seize_means_of_preoduction.o main.o 
 
 .PHONY: clean
-clean:
+clean: $(OBJECTS)
+	rm $(OBJECTS)
 
 communism:
 
